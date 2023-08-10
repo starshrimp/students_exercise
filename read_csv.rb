@@ -39,8 +39,8 @@ def parse_exercises
   end 
 end
 def output
-  # output_students
-  # output_lectures
+  output_students
+  output_lectures
   output_exercises
 end
 def output_students
@@ -96,23 +96,10 @@ def highest_percentage
       puts "The lecture '#{lecture.title}' had an average of #{lecture.average}."
     end
   end
-  # grouped_students = sorted_students.group_by { |student| student.exercises.length }
-
-  # sortedeach do |key, objects_array|
-  #   puts "These students solved #{key} exercises"
-  #   objects_array.each do |student|
-  #     puts "• #{student.id} #{student.full_name}"
-  #   end
 end
-
 
 parse
 assign_to_exercise
 output
 most_exercises_solved
 highest_percentage
-
-# lines[1..-1].each do |line|
-#   row = line.split(",")
-#   puts "Student(#{row[0]}): #{row[1]}"
-# end
